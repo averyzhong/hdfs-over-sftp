@@ -1,4 +1,4 @@
-package com.avery.sftp;
+package com.avery.hdfs.sftp;
 
 /**
  * @author AveryZhong.

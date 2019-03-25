@@ -1,4 +1,4 @@
-package com.avery.sftp;
+package com.avery.hdfs.sftp;
 
 import org.apache.log4j.PropertyConfigurator;
 import org.apache.sshd.SshServer;
