@@ -10,7 +10,7 @@ Hdfs-over-sftp is an open source project based on Apache sshd to access and oper
 4. enter "yes".
 5. press "Return" key directly, password is optional, can be empty.
 
-# Config
+# Configuration
  Edit `com.avery.hdfs.sftp.SftpConf.java` file as yours.
  Some config like this:
  ```
