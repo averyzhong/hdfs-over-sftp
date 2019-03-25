@@ -17,7 +17,7 @@ Hdfs-over-sftp is an open source project based on Apache sshd to access and oper
      public static final String HOST = "localhost";
      public static final int PORT = 2233;
  
-     public static final String HDFS_SERVER_URL = "hdfs://172.16.0.24:8020";
+     public static final String HDFS_SERVER_URL = "hdfs://ip:8020";
      public static final String HOME_DIR = "/";
  
  }
