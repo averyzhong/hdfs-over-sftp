@@ -13,7 +13,7 @@ Hdfs-over-sftp is an open source project based on Apache sshd to access and oper
 ```
 AveryZhong$ sftp -oPort=2233 -o HostKeyAlgorithms=+ssh-dss admin@localhost
 admin@localhost's password: 
-Connected to root@localhost.
+Connected to admin@localhost.
 sftp> ls          
 hbase               inject              log                 logs                merger              
 opt                 security            test                tmp                 
