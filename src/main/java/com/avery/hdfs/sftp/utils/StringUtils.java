@@ -1,4 +1,4 @@
-package com.avery.hdfs.sftp;
+package com.avery.hdfs.sftp.utils;
 
 import java.util.Arrays;
 

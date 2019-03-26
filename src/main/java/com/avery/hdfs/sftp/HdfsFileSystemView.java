@@ -1,5 +1,6 @@
 package com.avery.hdfs.sftp;
 
+import com.avery.hdfs.sftp.utils.StringUtils;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
@@ -18,28 +19,24 @@ import java.net.URI;
 @SuppressWarnings("all")
 public class HdfsFileSystemView implements FileSystemView {
     private static final Logger sLogger = LoggerFactory.getLogger(HdfsFileSystemView.class);
-    private final String mHomeDir;
     private FileSystem mFileSystem;
+    private String mHomeDir;
     private String mCurrDir;
     private String mUserName;
     private boolean isCaseInsensitive;
 
-
-    HdfsFileSystemView(String userName) {
-        this(userName, "/", false);
-    }
-
-    HdfsFileSystemView(final String userName, final String homeDir, final boolean caseInsensitive) {
+    HdfsFileSystemView(final String userName, final String hdfsUri,
+                       final String homeDir, final boolean caseInsensitive) {
         if (userName == null) {
             throw new IllegalArgumentException("userName can not be null");
         }
         isCaseInsensitive = caseInsensitive;
         mHomeDir = homeDir;
-        mCurrDir = StringUtils.concat(SftpConf.HDFS_SERVER_URL, mHomeDir);
+        mCurrDir = StringUtils.concat(hdfsUri, mHomeDir);
         sLogger.info("mCurrDir = {}", mCurrDir);
         this.mUserName = userName;
         try {
-            mFileSystem = FileSystem.get(URI.create(SftpConf.HDFS_SERVER_URL), new Configuration());
+            mFileSystem = FileSystem.get(URI.create(hdfsUri), new Configuration());
         } catch (IOException e) {
             e.printStackTrace();
         }
