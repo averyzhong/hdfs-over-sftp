@@ -5,10 +5,11 @@ Hdfs-over-sftp is an open source project based on Apache sshd to access and oper
 
 # How to Run?
 1. import project to your IDE(e.g: Intellij Idea).
-2. run `com.avery.hdfs.sftp.SftpServer#main`.
-3. input`sftp -oPort=2233 -o HostKeyAlgorithms=+ssh-dss yourusername@localhost` at your terminal and press "Return" key.
-4. enter "yes".
-5. enter your password and  press "Return" key.
+2. Edit the `resources/hdfs-over-sftp.properties` file & `resources/users.properties` as yours.
+3. run `com.avery.hdfs.sftp.SftpServer#main`.
+4. input`sftp -oPort=2233 -o HostKeyAlgorithms=+ssh-dss yourusername@localhost` at your terminal and press "Return" key.
+5. enter "yes".
+6. enter your password and  press "Return" key.
 ```
 AveryZhong$ sftp -oPort=2233 -o HostKeyAlgorithms=+ssh-dss root@localhost
 root@localhost's password: 
@@ -43,7 +44,5 @@ sftpserver.user.admin.enableflag=true
 sftpserver.user.sftpuser.userpassword=e10adc3949ba59abbe56e057f20f883e
 sftpserver.user.sftpuser.homedirectory=/log/log-download
 sftpserver.user.sftpuser.enableflag=true
-
-
  
  ```
