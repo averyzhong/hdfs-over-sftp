@@ -22,7 +22,7 @@ sftp>
 
 ```
 
-# Configuration
+# Configurations
 ## Server conf
 Edit the `resources/hdfs-over-sftp.properties` file as yours, some conf like this:
 ```
