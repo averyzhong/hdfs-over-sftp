@@ -36,13 +36,13 @@ hdfs-uri = hdfs://172.16.0.234:8020
  Edit the `resources/users.properties` file file as yours, some conf like this:
  ```
 # username: admin, password: 123456 (md5 format)
-sftpserver.user.admin.userpassword=e10adc3949ba59abbe56e057f20f883e
-sftpserver.user.admin.homedirectory=/log
-sftpserver.user.admin.enableflag=true
+sftpserver.user.admin.userpassword = e10adc3949ba59abbe56e057f20f883e
+sftpserver.user.admin.homedirectory = /log
+sftpserver.user.admin.enableflag = true
 
 # username: sftpuser, password: 123456 (md5 format)
-sftpserver.user.sftpuser.userpassword=e10adc3949ba59abbe56e057f20f883e
-sftpserver.user.sftpuser.homedirectory=/log/log-download
-sftpserver.user.sftpuser.enableflag=true
- 
+sftpserver.user.sftpuser.userpassword = e10adc3949ba59abbe56e057f20f883e
+sftpserver.user.sftpuser.homedirectory = /log/log-download
+sftpserver.user.sftpuser.enableflag = true
+
  ```
