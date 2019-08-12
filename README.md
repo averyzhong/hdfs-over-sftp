@@ -30,7 +30,7 @@ Edit the `resources/hdfs-over-sftp.properties` file as yours, some config like t
 host = localhost
 port = 2233
 # hdfs uri
-hdfs-uri = hdfs://172.16.0.234:8020
+hdfs-uri = hdfs://host:port
 ```
  ### Users config
  Edit the `resources/users.properties` file file as yours, some config like this:
