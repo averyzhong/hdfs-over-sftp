@@ -23,7 +23,7 @@ sftp>
 ```
 
 # Configurations
-## Server config
+### Server config
 Edit the `resources/hdfs-over-sftp.properties` file as yours, some config like this:
 ```
 # sftp server host & port
@@ -32,7 +32,7 @@ port = 2233
 # hdfs uri
 hdfs-uri = hdfs://172.16.0.234:8020
 ```
- ## Users config
+ ### Users config
  Edit the `resources/users.properties` file file as yours, some config like this:
  ```
 # username: admin, password: 123456 (md5 format)
